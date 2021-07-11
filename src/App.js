@@ -1,11 +1,10 @@
-import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Membership from "./pages/Membership";
 import TheClub from "./pages/TheClub";
 import News from "./pages/News";
 import Contact from "./pages/Contact";
-import Header from "./components/layout/Header";
+import Header from "./components/header/Header";
 
 function App() {
   return (
