@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logoLarge.png";
 import DrawerToggle from "./DrawerToggle";
 import SideDrawer from "../nav/SideDrawer";
+import Backdrop from "../UI/Backdrop";
 import classes from "./Header.module.css";
 
 const Header = () => {
@@ -18,40 +19,20 @@ const Header = () => {
 
   return (
     <header className={classes.header}>
-      {sideBarShowing && <SideDrawer closeSideBar={closeSideBar} />}
+      {sideBarShowing && <Backdrop clicked={closeSideBar} />}
+      <SideDrawer closeSideBar={closeSideBar} open={sideBarShowing} />
+
       <DrawerToggle clicked={openSideBar} />
-      <NavLink to="/">
-        <img
-          className={classes.logo}
-          src={logo}
-          alt="Titwood Tennis Club Logo"
-        />
-      </NavLink>
-      <button className={classes.button}>Book a Court</button>
+      <div className={classes.logo}>
+        <NavLink to="/">
+          <img src={logo} alt="Titwood Tennis Club Logo" />
+        </NavLink>
+      </div>
+      <div className={classes.bookBtn}>
+        <button className={classes.button}>Book a Court</button>
+      </div>
     </header>
   );
 };
-
-/*
- <nav className={classes.navItems}>
-        <ul>
-          <li>
-            <NavLink to="/membership">Membership</NavLink>
-          </li>
-          <li>
-            <NavLink to="/the-club">The Club</NavLink>
-          </li>
-          <li>
-            <NavLink to="/news">News &amp; Events</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact">Get in Touch</NavLink>
-          </li>
-          <li>
-            <NavLink to="/book-court">Book a Court</NavLink>
-          </li>
-        </ul>
-      </nav>
-*/
 
 export default Header;

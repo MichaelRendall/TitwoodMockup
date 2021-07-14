@@ -1,22 +1,31 @@
+.navItems {
+  width: 100%;
+}
+
 .navItems ul {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	margin: 0;
-  }
-  
-  .navItems li {
-	margin: 0 1.25rem;
-	font-size: 1.1rem;
-  }
-  
-  .navItems a {
-	text-decoration: none;
-	color: #f9f9f9;
-  }
-  
-  .navItems a:hover,
-  .navItems a:active,
-  .navItems a.active {
-	color: #e6fcfc;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.navItems li {
+  margin: 0.5rem 1.25rem;
+  font-size: 1.1rem;
+}
+
+.navItems a {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.navItems a:hover,
+.navItems a:active {
+  color: #f9f9f9;
+  text-decoration: underline;
+}
+
+.navItems a.active {
+  color: #425348;
+}

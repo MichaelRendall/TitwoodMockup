@@ -6,22 +6,48 @@ const Navigation = (props) => {
     <nav className={classes.navItems}>
       <ul>
         <li>
-          <NavLink to="/membership" onClick={props.clicked}>
+          <NavLink
+            to="/"
+            activeClassName={classes.active}
+            onClick={props.clicked}
+			exact
+          >
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/membership"
+            activeClassName={classes.active}
+            onClick={props.clicked}
+          >
             Membership
           </NavLink>
         </li>
         <li>
-          <NavLink to="/the-club" onClick={props.clicked}>
+          <NavLink
+            to="/the-club"
+            activeClassName={classes.active}
+            onClick={props.clicked}
+          >
             The Club
           </NavLink>
         </li>
         <li>
-          <NavLink to="/news" onClick={props.clicked}>
+          <NavLink
+            to="/news"
+            activeClassName={classes.active}
+            onClick={props.clicked}
+          >
             News &amp; Events
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" onClick={props.clicked}>
+          <NavLink
+            to="/contact"
+            activeClassName={classes.active}
+            onClick={props.clicked}
+          >
             Get in Touch
           </NavLink>
         </li>
