@@ -1,5 +1,7 @@
+import Banner from '../components/UI/Banner';
+
 const Home = () => {
-  return "titwood tennis club";
+  return <Banner />
 };
 
 export default Home;

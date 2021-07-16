@@ -1,7 +1,7 @@
+import React from "react";
 import CSSTransition from "react-transition-group/CSSTransition";
 
 import classes from "./SideDrawer.module.css";
-import React from "react";
 import logo from "../../assets/logoLarge.png";
 import Navigation from "./Navigation";
 

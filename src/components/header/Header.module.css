@@ -1,14 +1,15 @@
 .header {
   display: flex;
+  position: fixed;
   width: 100%;
-  background-color: #58ad73;
+  background: rgba(66, 83, 72, 0.9);
   padding: 1rem 10rem;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  width: 9rem;
+  width: 6rem;
 }
 
 .logo img {
@@ -26,6 +27,7 @@
   padding: 1rem;
   border-radius: 4px;
   cursor: pointer;
+  border: 1px solid #c6b27e;
 }
 
 @media screen and (max-width: 480px) {
