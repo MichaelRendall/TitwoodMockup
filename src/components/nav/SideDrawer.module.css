@@ -9,7 +9,7 @@
   left: 0;
   top: 0;
   z-index: 200;
-  background-color: #58ad73;
+  background: rgba(66, 83, 72, 1);
   padding: 2rem 1rem;
   box-sizing: border-box;
   /*transition: transform 0.3s ease-out;*/

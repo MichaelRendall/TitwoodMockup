@@ -1,7 +1,13 @@
 .Banner {
+  display: flex;
+  justify-content: center;
   width: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  height: 100vh;
 }
 
 .Banner img {
   width: 100%;
+  object-fit: cover;
 }

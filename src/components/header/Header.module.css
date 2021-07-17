@@ -1,8 +1,9 @@
 .header {
   display: flex;
   position: fixed;
+  z-index: 100;
   width: 100%;
-  background: rgba(66, 83, 72, 0.9);
+  background: #425348;
   padding: 1rem 10rem;
   justify-content: space-between;
   align-items: center;
@@ -32,7 +33,11 @@
 
 @media screen and (max-width: 480px) {
   .header {
-    padding: 1rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .logo {
+    width: 4rem;
   }
 
   .button {
