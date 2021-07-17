@@ -1,15 +1,20 @@
 .BannerText {
-  width: 50rem;
+  width: 100vw;
   top: 30vh;
   position: absolute;
-  left: 50%;
-  margin-left: -25rem;
   text-align: center;
   color: #f9f9f9;
   text-shadow: 0 0 5px #000;
+  padding: 1rem;
 }
 
 .BannerText small {
   font-weight: 600;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .BannerText {
+    top: 20vh;
+  }
 }
