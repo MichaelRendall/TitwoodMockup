@@ -1,6 +1,56 @@
 .footer {
   display: flex;
+  flex-direction: column;
   background-color: #425348;
   color: #f9f9f9;
   justify-content: space-between;
+  font-size: 1.1rem;
 }
+
+.footerRow {
+  display: flex;
+  width: 100%;
+}
+
+.footerRow:last-of-type {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-top: 1rem;
+}
+
+.footerRow div {
+  width: 100%;
+}
+
+.footerRow div:last-of-type {
+  text-align: right;
+}
+
+.ul {
+  text-align: center;
+  padding: 0;
+}
+
+.ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.contactIcon {
+  margin-right: 10px;
+}
+
+.mediaIcon {
+  font-size: 1.75rem;
+}
+
+/*@media screen and (max-width: 480px) {
+  
+	.footerRow div:last-of-type {
+		text-align: left;
+	  }
+	
+	.footerRow {
+    flex-direction: column;
+  }
+}*/

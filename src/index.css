@@ -11,6 +11,7 @@ html {
 body {
   margin: 0;
   font-size: 16px;
+  background: #f9f9f9;
 }
 
 ul {
@@ -23,6 +24,10 @@ h1 {
 
 .padding {
   padding: 1rem 10rem;
+}
+
+.centerText {
+  text-align: center;
 }
 
 @media screen and (max-width: 1150px) {
