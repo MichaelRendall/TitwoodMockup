@@ -5,6 +5,14 @@ import TheClub from "./pages/TheClub";
 import News from "./pages/News";
 import Contact from "./pages/Contact";
 import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
+
+library.add(fas, fab, far);
 
 function App() {
   return (
@@ -27,6 +35,7 @@ function App() {
           <Contact />
         </Route>
       </Switch>
+      <Footer />
     </div>
   );
 }

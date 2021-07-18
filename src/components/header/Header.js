@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   return (
-    <header className={classes.header}>
+    <header className={`${classes.header} padding`}>
       {sideBarShowing && <Backdrop clicked={closeSideBar} />}
       <SideDrawer closeSideBar={closeSideBar} open={sideBarShowing} />
 

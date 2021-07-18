@@ -20,3 +20,25 @@ ul {
 h1 {
   margin: 0;
 }
+
+.padding {
+  padding: 1rem 10rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .padding {
+    padding: 1rem 5rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .padding {
+    padding: 1rem 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .padding {
+    padding: 1rem 1.5rem;
+  }
+}
