@@ -22,11 +22,11 @@ const Header = () => {
       {sideBarShowing && <Backdrop clicked={closeSideBar} />}
       <SideDrawer closeSideBar={closeSideBar} open={sideBarShowing} />
 
-      <div>
+      <div className={classes.headerSection}>
         <DrawerToggle clicked={openSideBar} />
       </div>
 
-      <div>
+      <div className={classes.headerSection}>
         <div className={classes.logo}>
           <NavLink to="/">
             <img src={logo} alt="Titwood Tennis Club Logo" />
@@ -34,7 +34,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className={classes.bookBtn}>
+      <div className={`${classes.bookBtn} ${classes.headerSection}`}>
         <button className={classes.button}>Book a Court</button>
       </div>
     </header>

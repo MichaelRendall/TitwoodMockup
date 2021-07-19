@@ -8,6 +8,19 @@
   align-items: center;
 }
 
+.headerSection {
+  flex: 1;
+  display: flex;
+}
+
+.headerSection:nth-of-type(even) {
+  justify-content: center;
+}
+
+.headerSection:last-of-type {
+  justify-content: flex-end;
+}
+
 .logo {
   width: 6rem;
 }
