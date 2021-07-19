@@ -1,9 +1,13 @@
 .header {
-  display: flex;
   position: fixed;
   z-index: 100;
   width: 100%;
   background: #425348;
+}
+
+.header > .headerContainer {
+  display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -11,6 +15,10 @@
 .headerSection {
   flex: 1;
   display: flex;
+}
+
+.headerSection:first-of-type {
+  justify-content: flex-start;
 }
 
 .headerSection:nth-of-type(even) {
