@@ -56,7 +56,7 @@ const Footer = () => {
       </div>
       <div className={classes.footerRow}>
         <div>
-          <small>© 2020 Titwood Lawn Tennis Club</small>
+          <small>© 2021 Titwood Lawn Tennis Club</small>
         </div>
         <div className="centerText">
           <small>Privacy Policy</small>
