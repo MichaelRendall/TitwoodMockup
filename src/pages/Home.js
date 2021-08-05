@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <React.Fragment>
       <Banner />
-	  <BannerText />
-	  <ClubSummary />
+      <BannerText />
+      <ClubSummary />
     </React.Fragment>
   );
 };

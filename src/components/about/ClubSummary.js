@@ -1,17 +1,12 @@
 import classes from "./ClubSummary.module.css";
-import gate from "../../assets/club-gate.jpg";
+import OpeningHours from "./OpeningHours";
 
 const ClubSummary = () => {
   return (
     <div className={`${classes.ClubSummary} padding`}>
-      <h2 className={classes.h2}>The Club</h2>
-      <div>
+      <h2 className="h2">THE CLUB</h2>
+      <div className="flex">
         <div>
-          <p>
-            With a history dating back to 1890, we are a vibrant private
-            members’ club in a conservation area in Pollokshields on Glasgow’s
-            South side.
-          </p>
           <p>
             We are registered as a venue by the Lawn Tennis Association and
             Tennis Scotland.
@@ -38,9 +33,7 @@ const ClubSummary = () => {
             info@titwoodlawntennisclub.co.uk
           </p>
         </div>
-        <div>
-          <img src={gate} alt="The entrance into the club" />
-        </div>
+        <OpeningHours />
       </div>
     </div>
   );

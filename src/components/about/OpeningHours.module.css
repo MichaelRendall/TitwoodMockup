@@ -1,0 +1,20 @@
+.OpeningHours {
+  width: 33%;
+  min-width: 18rem;
+  margin-left: 60px;
+}
+
+.OpeningHours > div {
+  border: 1px solid #dbdbdb;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.section {
+  margin: 1.5rem 0;
+}
+
+.bodyText {
+  margin: 0;
+  text-align: center;
+}
