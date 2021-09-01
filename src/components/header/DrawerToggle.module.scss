@@ -1,0 +1,18 @@
+@import "../../styles/_variables.scss";
+
+.DrawerToggle {
+  width: 1.875rem;
+  height: 3.75rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.625rem 0;
+  cursor: pointer;
+
+  div {
+    width: 100%;
+    height: 4px;
+    background-color: map-get($colors, off-white);
+  }
+}

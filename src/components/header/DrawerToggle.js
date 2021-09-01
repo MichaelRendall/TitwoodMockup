@@ -1,4 +1,4 @@
-import classes from "./DrawerToggle.module.css";
+import classes from "./DrawerToggle.module.scss";
 
 const DrawerToggle = (props) => (
   <div className={classes.DrawerToggle} onClick={props.clicked}>

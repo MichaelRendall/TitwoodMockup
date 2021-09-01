@@ -1,0 +1,59 @@
+@import "../../styles/_variables.scss";
+
+.header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background: map-get($colors, dark-green);
+
+  .headerContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.headerSection {
+  flex: 1;
+  display: flex;
+
+  &:first-of-type {
+    justify-content: flex-start;
+  }
+
+  &:nth-of-type(even) {
+    justify-content: center;
+  }
+
+  &:last-of-type {
+    justify-content: flex-end;
+  }
+}
+
+.logo {
+  width: 4rem;
+  @media (min-width: 30rem) {
+    width: 6rem;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.bookBtn {
+  min-width: 30px;
+}
+
+.button {
+  display: none;
+  color: map-get($colors, off-white);
+  background-color: map-get($colors, dark-green);
+  padding: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid map-get($colors, secondary-tan);
+  @media (min-width: 30rem) {
+    display: block;
+  }
+}

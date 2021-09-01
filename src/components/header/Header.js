@@ -4,7 +4,7 @@ import logo from "../../assets/logoLarge.png";
 import DrawerToggle from "./DrawerToggle";
 import SideDrawer from "../nav/SideDrawer";
 import Backdrop from "../UI/Backdrop";
-import classes from "./Header.module.css";
+import classes from "./Header.module.scss";
 
 const Header = () => {
   const [sideBarShowing, setSideBarShowing] = useState(false);
