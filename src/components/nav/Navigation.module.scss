@@ -19,15 +19,15 @@
 
 .navItems a {
   text-decoration: none;
-  color: map-get($colors, off-white);
+  color: $off-white;
 }
 
 .navItems a:hover,
 .navItems a:active {
-  color: map-get($colors, off-white);
+  color: $off-white;
   text-decoration: underline;
 }
 
 .navItems a.active {
-  color: map-get($colors, secondary-tan);
+  color: $tan;
 }

@@ -1,6 +1,7 @@
+import NewsItems from "../components/news/NewsItems";
+
 const News = () => {
-	return "news";
-  };
-  
-  export default News;
-  
+  return <NewsItems />;
+};
+
+export default News;

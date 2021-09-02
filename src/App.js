@@ -18,23 +18,25 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Switch>
-        <Route path="/" exact>
-          <Home />
-        </Route>
-        <Route path="/membership" exact>
-          <Membership />
-        </Route>
-        <Route path="/the-club" exact>
-          <TheClub />
-        </Route>
-        <Route path="/news" exact>
-          <News />
-        </Route>
-        <Route path="/contact" exact>
-          <Contact />
-        </Route>
-      </Switch>
+      <main>
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+          <Route path="/membership" exact>
+            <Membership />
+          </Route>
+          <Route path="/the-club" exact>
+            <TheClub />
+          </Route>
+          <Route path="/news" exact>
+            <News />
+          </Route>
+          <Route path="/contact" exact>
+            <Contact />
+          </Route>
+        </Switch>
+      </main>
       <Footer />
     </div>
   );

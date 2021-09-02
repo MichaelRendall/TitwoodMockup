@@ -6,12 +6,39 @@
 }
 
 html {
+  height: 100%;
   font-family: "Noto Sans JP", sans-serif;
 }
 
 body {
+  height: 100%;
   margin: 0;
-  background: map-get($colors, off-white);
+  background: $off-white;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: $header-height-mobile auto fit-content(8rem);
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  height: 100%;
+  @media (min-width: 30rem) {
+    grid-template-rows: $header-height-web auto fit-content(8rem);
+  }
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
 }
 
 ul {
@@ -35,7 +62,7 @@ h3 {
     width: 30px;
     margin: 2px auto;
     display: block;
-    border-bottom: 3px solid map-get($colors, dark-green);
+    border-bottom: 3px solid $main-green;
   }
 }
 
@@ -62,6 +89,6 @@ h3 {
 }
 
 .h2 {
-  border-bottom: 3px solid map-get($colors, dark-green);
+  border-bottom: 3px solid $main-green;
   padding-bottom: 0.375rem;
 }

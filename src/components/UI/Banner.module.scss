@@ -1,17 +1,27 @@
 @import "../../styles/_variables.scss";
 
 .Banner {
-  display: flex;
-  justify-content: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../../assets/main-background-cropped.jpg");
+  background-position: center;
   width: 100%;
-  overflow: hidden;
-  object-fit: cover;
-  height: 100vh;
-  background-color: #000;
+  height: calc(100vh - #{$header-height-mobile});
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $off-white;
+  text-shadow: 0 0 5px #000;
+  @media (min-width: 30rem) {
+    height: calc(100vh - #{$header-height-web});
+  }
 
-  img {
-    width: 100%;
-    object-fit: cover;
-    opacity: 0.7;
+  small {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
   }
 }

@@ -3,8 +3,8 @@
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: map-get($colors, dark-green);
-  color: map-get($colors, off-white);
+  background-color: $main-green;
+  color: $off-white;
   justify-content: space-between;
   font-size: 1.1rem;
 }

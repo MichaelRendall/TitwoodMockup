@@ -2,9 +2,15 @@
 
 .header {
   position: fixed;
+  display: flex;
+  align-items: center;
   z-index: 100;
   width: 100%;
-  background: map-get($colors, dark-green);
+  height: $header-height-mobile;
+  background: $main-green;
+  @media (min-width: 30rem) {
+    height: $header-height-web;
+  }
 
   .headerContainer {
     display: flex;
@@ -34,7 +40,7 @@
 .logo {
   width: 4rem;
   @media (min-width: 30rem) {
-    width: 6rem;
+    width: 5rem;
   }
   img {
     width: 100%;
@@ -47,12 +53,12 @@
 
 .button {
   display: none;
-  color: map-get($colors, off-white);
-  background-color: map-get($colors, dark-green);
+  color: $off-white;
+  background-color: $main-green;
   padding: 1rem;
   border-radius: 4px;
   cursor: pointer;
-  border: 1px solid map-get($colors, secondary-tan);
+  border: 1px solid $tan;
   @media (min-width: 30rem) {
     display: block;
   }

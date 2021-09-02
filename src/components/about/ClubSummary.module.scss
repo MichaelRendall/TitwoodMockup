@@ -5,7 +5,22 @@
   flex-direction: column;
 }
 
+.ClubSummary__sections {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 40rem) {
+    flex-direction: row;
+  }
+}
+
+.ClubSummary__about {
+  width: 100%;
+  @media (min-width: 40rem) {
+    width: 66%;
+  }
+}
+
 .svg {
   margin-right: 0.625rem;
-  color: map-get($colors, dark-green);
+  color: $main-green;
 }

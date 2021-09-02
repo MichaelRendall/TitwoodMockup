@@ -6,8 +6,8 @@ const ClubSummary = () => {
   return (
     <div className={`${classes.ClubSummary} padding`}>
       <h2 className="h2">THE CLUB</h2>
-      <div className="flex">
-        <div>
+      <div className={classes.ClubSummary__sections}>
+        <div className={classes.ClubSummary__about}>
           <p>
             <FontAwesomeIcon
               icon={["fas", "chevron-circle-right"]}
