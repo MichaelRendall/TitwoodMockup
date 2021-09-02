@@ -1,3 +1,5 @@
+@import "../../styles/_variables.scss";
+
 .Banner {
   display: flex;
   justify-content: center;
@@ -6,10 +8,10 @@
   object-fit: cover;
   height: 100vh;
   background-color: #000;
-}
 
-.Banner img {
-  width: 100%;
-  object-fit: cover;
-  opacity: 0.7;
+  img {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+  }
 }

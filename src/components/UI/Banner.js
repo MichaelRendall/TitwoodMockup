@@ -1,5 +1,5 @@
 import mainBackground from "../../assets/main-background-cropped.jpg";
-import classes from "./Banner.module.css";
+import classes from "./Banner.module.scss";
 
 const Banner = () => {
   return (

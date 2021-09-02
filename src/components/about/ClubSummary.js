@@ -1,4 +1,4 @@
-import classes from "./ClubSummary.module.css";
+import classes from "./ClubSummary.module.scss";
 import OpeningHours from "./OpeningHours";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

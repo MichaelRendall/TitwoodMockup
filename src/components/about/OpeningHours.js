@@ -1,4 +1,4 @@
-import classes from "./OpeningHours.module.css";
+import classes from "./OpeningHours.module.scss";
 
 const OpeningHours = () => {
   return (

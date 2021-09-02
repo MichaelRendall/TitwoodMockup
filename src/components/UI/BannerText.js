@@ -1,4 +1,4 @@
-import classes from "./BannerText.module.css";
+import classes from "./BannerText.module.scss";
 
 const BannerText = () => {
   return (

@@ -1,0 +1,11 @@
+@import "../../styles/_variables.scss";
+
+.ClubSummary {
+  display: flex;
+  flex-direction: column;
+}
+
+.svg {
+  margin-right: 0.625rem;
+  color: map-get($colors, dark-green);
+}

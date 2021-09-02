@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import classes from "./Navigation.module.css";
+import classes from "./Navigation.module.scss";
 
 const Navigation = (props) => {
   return (
