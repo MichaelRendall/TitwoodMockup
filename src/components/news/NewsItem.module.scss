@@ -1,0 +1,18 @@
+@import "../../styles/_variables.scss";
+
+.NewsItem {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid $light-grey;
+}
+
+.NewsItem__header {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.NewsItem__date {
+  text-transform: uppercase;
+  color: $tan;
+  font-size: 0.75rem;
+}

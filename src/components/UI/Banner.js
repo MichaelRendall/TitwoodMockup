@@ -6,7 +6,7 @@ const BannerText = () => {
       <div>
         <small>EST 1890</small>
         <h1>Welcome to Titwood Lawn Tennis Club</h1>
-        <h2>
+        <h2 className="web-only">
           We are a friendly, private tennis club in Pollokshields, Glasgow, with
           5 floodlit all-weather courts and 2 blaes courts.
         </h2>

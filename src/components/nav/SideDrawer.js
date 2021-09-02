@@ -1,5 +1,6 @@
 import React from "react";
 import CSSTransition from "react-transition-group/CSSTransition";
+import { NavLink } from "react-router-dom";
 
 import classes from "./SideDrawer.module.scss";
 import logo from "../../assets/logoLarge.png";
@@ -21,12 +22,14 @@ const SideDrawer = (props) => {
         classNames={{ enterActive: classes.Open, exitActive: classes.Close }}
       >
         <div className={classes.SideDrawer}>
-          <img
-            className={classes.logo}
-            src={logo}
-            alt="Titwood Tennis Club Logo"
-          />
-          <hr />
+          <div className={classes.SideDrawer__TopSection}>
+            <div className={classes.logo}>
+              <NavLink to="/" onClick={props.closeSideBar}>
+                <img src={logo} alt="Titwood Tennis Club Logo" />
+              </NavLink>
+            </div>
+            {/* <hr /> */}
+          </div>
           <Navigation clicked={props.closeSideBar} />
         </div>
       </CSSTransition>

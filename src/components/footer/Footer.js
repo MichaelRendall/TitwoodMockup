@@ -19,7 +19,7 @@ const Footer = () => {
               icon={["fas", "envelope"]}
               className={classes.contactIcon}
             />
-            info@titwoodlawntennisclub.co.uk
+            info@titwoodtennis.co.uk
           </p>
         </div>
         <div>

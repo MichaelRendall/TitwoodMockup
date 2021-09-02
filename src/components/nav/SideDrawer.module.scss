@@ -12,15 +12,33 @@
   top: 0;
   z-index: 200;
   background: $main-green;
-  padding: 2rem 1rem;
-
-  img {
-    width: 25%;
-  }
+  padding: 0 1rem;
 
   hr {
     width: 100%;
     margin: 1.5rem 0;
+  }
+}
+
+.SideDrawer__TopSection {
+  height: $header-height-mobile;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid $tan;
+  @media (min-width: 30rem) {
+    height: $header-height-web;
+  }
+}
+
+.logo {
+  width: 4rem;
+  @media (min-width: 30rem) {
+    width: 5rem;
+  }
+  img {
+    width: 100%;
   }
 }
 

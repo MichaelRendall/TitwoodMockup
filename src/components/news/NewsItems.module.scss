@@ -1,0 +1,29 @@
+@import "../../styles/_variables.scss";
+
+.NewsItems__header {
+  font-size: 1.5rem;
+  text: {
+    align: center;
+    transform: uppercase;
+  }
+  &:after {
+    content: "";
+    width: 30px;
+    margin: 2px auto;
+    display: block;
+    border-bottom: 3px solid $main-green;
+  }
+}
+
+.NewsItems {
+  width: 100%;
+  max-width: 54rem;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+  @media (min-width: 40rem) {
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: minmax(300px, auto);
+  }
+}
