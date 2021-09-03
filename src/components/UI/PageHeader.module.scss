@@ -1,0 +1,16 @@
+@import "../../styles/_variables.scss";
+
+.page_header {
+  font-size: 1.5rem;
+  text: {
+    align: center;
+    transform: uppercase;
+  }
+  &:after {
+    content: "";
+    width: 30px;
+    margin: 2px auto;
+    display: block;
+    border-bottom: 3px solid $main-green;
+  }
+}

@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Membership from "./pages/Membership";
 import TheClub from "./pages/TheClub";
 import News from "./pages/News";
+import NewsHighlighted from "./pages/NewsHighlighted";
 import Contact from "./pages/Contact";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route path="/news" exact>
             <News />
+          </Route>
+          <Route path="/news/:newsId">
+            <NewsHighlighted />
           </Route>
           <Route path="/contact" exact>
             <Contact />
