@@ -1,6 +1,6 @@
 import classes from "./NewsItems.module.scss";
 import NewsItem from "./NewsItem";
-import DUMMY_NEWS from "../../lib/dummy";
+import DUMMY_NEWS from "../../lib/dummy-news";
 
 const NewsItems = () => {
   const newsList = DUMMY_NEWS.map((news) => {

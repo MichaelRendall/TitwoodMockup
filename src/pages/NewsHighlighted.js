@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import NewsItemsHighlighted from "../components/news/NewsItemHighlighted";
 import PageHeader from "../components/UI/PageHeader";
-import DUMMY_NEWS from "../lib/dummy";
+import DUMMY_NEWS from "../lib/dummy-news";
 
 const NewsHighlighted = () => {
   const params = useParams();

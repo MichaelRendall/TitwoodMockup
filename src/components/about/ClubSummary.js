@@ -1,11 +1,11 @@
 import classes from "./ClubSummary.module.scss";
 import OpeningHours from "./OpeningHours";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
 
 const ClubSummary = () => {
   return (
-    <div className={`${classes.ClubSummary} padding`}>
-      <h2 className="h2">THE CLUB</h2>
+    <React.Fragment>
       <div className={classes.ClubSummary__sections}>
         <div className={classes.ClubSummary__about}>
           <p>
@@ -60,7 +60,7 @@ const ClubSummary = () => {
         </div>
         <OpeningHours />
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

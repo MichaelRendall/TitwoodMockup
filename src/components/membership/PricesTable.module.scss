@@ -1,0 +1,30 @@
+@import "../../styles/_variables.scss";
+
+.Prices__table {
+  width: 100%;
+  border: 1px solid $light-grey;
+  margin: 2rem auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.Prices__table_row {
+  background: $off-white;
+
+  td,
+  th {
+    padding: 0.5rem;
+  }
+}
+
+.Prices__table_row:nth-of-type(even) {
+  background: darken($off-white, 3%);
+}
+
+.info_icon {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  /* &:hover {
+    color: $tan;
+  } */
+}
