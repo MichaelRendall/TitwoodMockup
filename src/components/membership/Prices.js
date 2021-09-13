@@ -15,7 +15,6 @@ const Prices = () => {
 
   const hideInfoHandler = () => {
     setModalShowing(false);
-    /* setActiveInfo(null); */
   };
 
   return (

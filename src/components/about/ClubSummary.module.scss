@@ -1,8 +1,7 @@
 @import "../../styles/_variables.scss";
 
 .ClubSummary__sections {
-  max-width: $max-width;
-  margin: 2rem auto;
+  @extend .section-container;
   display: flex;
   flex-direction: column-reverse;
   @media (min-width: 40rem) {

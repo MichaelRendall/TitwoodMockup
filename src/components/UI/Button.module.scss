@@ -10,6 +10,7 @@
 
   &:hover,
   &:active {
-	  background: darken($off-white, 3%);
+    background: darken($off-white, 3%);
+    /*  background: $tan; */
   }
 }

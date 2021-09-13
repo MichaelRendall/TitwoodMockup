@@ -7,3 +7,9 @@ $header-height-mobile: 5.2rem;
 $header-height-web: 6.2rem;
 $headerheight: 6.2rem;
 $max-width: 54rem;
+
+.section-container {
+  width: 100%;
+  max-width: $max-width;
+  margin: 2rem auto;
+}

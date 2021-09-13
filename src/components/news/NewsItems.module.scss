@@ -1,9 +1,7 @@
 @import "../../styles/_variables.scss";
 
 .NewsItems {
-  width: 100%;
-  max-width: $max-width;
-  margin: 2rem auto;
+  @extend .section-container;
   display: grid;
   grid-template-columns: auto;
   grid-gap: 1rem;

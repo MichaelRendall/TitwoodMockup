@@ -58,7 +58,7 @@ h3 {
     transform: uppercase;
   }
 
- /*  &:after {
+  /*  &:after {
     content: "";
     width: 30px;
     margin: 2px auto;
@@ -79,6 +79,10 @@ h3 {
   @media (min-width: 72rem) {
     padding: 1rem 10rem;
   }
+}
+
+.darker {
+  background: darken($off-white, 3%);
 }
 
 .flex {

@@ -1,0 +1,79 @@
+@import "../../styles/_variables.scss";
+
+.form__container {
+  @extend .section-container;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+  max-width: 35rem;
+}
+
+.form__input_container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  position: relative;
+  @media (min-width: 30rem) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.form__label {
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.5;
+  color: $main-green;
+}
+
+.form__input,
+.form__textarea {
+  font: {
+    size: inherit;
+    family: inherit;
+  }
+  padding: 1rem 3rem;
+  border-radius: 3px;
+  border: 2px solid $light-grey;
+  outline: none;
+  width: 100%;
+  &:active,
+  &:focus {
+    border: 2px solid $main-green;
+  }
+  &:active + .form__label,
+  &:focus + .form__label {
+    opacity: 1;
+  }
+}
+
+.form__textarea {
+  resize: vertical;
+  min-height: 125px;
+}
+
+.form__button {
+  font-size: 1rem;
+  border: none;
+  padding: 1rem 3rem;
+  background: $main-green;
+  color: $off-white;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  width: 100%;
+
+  &:hover,
+  &:active {
+    background: darken($main-green, 10%);
+  }
+
+  @media (min-width: 30rem) {
+    width: initial;
+  }
+}

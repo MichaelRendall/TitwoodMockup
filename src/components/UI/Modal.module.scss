@@ -24,24 +24,27 @@
 }
 
 .Close {
-  /* opacity: 0; */
   animation: closeModal 0.2s ease-out forwards;
 }
 
 @keyframes openModal {
   0% {
-    transform: translate(-50%, -55%);
+    transform: translate(-50%, -60%);
+    opacity: 0;
   }
   100% {
     transform: translate(-50%, -50%);
+    opacity: 1;
   }
 }
 
 @keyframes closeModal {
   0% {
     transform: translate(-50%, -50%);
+    opacity: 1;
   }
   100% {
-    transform: translate(-50%, -55%);
+    transform: translate(-50%, -60%);
+    opacity: 0;
   }
 }
