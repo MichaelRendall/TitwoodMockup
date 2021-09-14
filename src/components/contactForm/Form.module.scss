@@ -57,6 +57,15 @@
   min-height: 125px;
 }
 
+.form__invalid {
+  border: 2px solid $red;
+  transition: all 0.3s ease;
+}
+
+.form__invalid + .form__label {
+  color: $red;
+}
+
 .form__button {
   font-size: 1rem;
   border: none;
@@ -71,6 +80,14 @@
   &:hover,
   &:active {
     background: darken($main-green, 10%);
+  }
+
+  &:disabled,
+  &:disabled:hover,
+  &:disabled:active {
+    background: $main-green;
+    opacity: 0.5;
+    cursor: not-allowed;
   }
 
   @media (min-width: 30rem) {
