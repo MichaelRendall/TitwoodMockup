@@ -11,15 +11,14 @@ const Membership = () => {
         <PageHeader title="Membership Information" />
         <Prices />
       </div>
-	  <div className="padding darker">
+      <div className="padding darker">
         <PageHeader title="Apply for Membership" />
-		<Form />
+        <Form />
       </div>
       <div className="padding">
         <PageHeader title="Additional Information" />
         <AdditionalInfo />
       </div>
-	  
     </React.Fragment>
   );
 };

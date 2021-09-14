@@ -1,7 +1,7 @@
 import classes from "./Form.module.scss";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import useInput from "../../hooks/use-input";
+import useInput from "../../hooks/use-validation";
 
 const isNotEmpty = (value) => value.trim() !== "";
 
