@@ -1,6 +1,7 @@
 import classes from "./Form.module.scss";
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Input from "../UI/Input";
+import Textarea from "../UI/Textarea";
 import useInput from "../../hooks/use-validation";
 
 const isNotEmpty = (value) => value.trim() !== "";
@@ -68,82 +69,38 @@ const Form = (props) => {
   return (
     <div className={classes.form__container}>
       <form className={classes.form} onSubmit={formSubmitHandler}>
-        <div className={classes.form__input_container}>
-          <input
-            id="name"
-            placeholder="Full Name"
-            className={`${classes.form__input} ${
-              nameHasError && classes.form__invalid
-            } `}
-            value={enteredName}
-            onBlur={nameBlurHandler}
-            onChange={nameChangeHandler}
-          />
-          <label
-            htmlFor="name"
-            className={`${classes.form__label} ${classes.isactive}`}
-          >
-            <FontAwesomeIcon
-              icon={["fas", "user"]}
-              className={classes.contactIcon}
-            />
-          </label>
-        </div>
-        <div className={classes.form__input_container}>
-          <input
-            id="phone"
-            placeholder="Phone Number"
-            className={`${classes.form__input} ${
-              phoneHasError && classes.form__invalid
-            } `}
-            value={enteredPhone}
-            onBlur={phoneBlurHandler}
-            onChange={phoneChangeHandler}
-          />
-          <label htmlFor="phone" className={classes.form__label}>
-            <FontAwesomeIcon
-              icon={["fas", "mobile-alt"]}
-              className={classes.contactIcon}
-            />
-          </label>
-        </div>
-        <div className={classes.form__input_container}>
-          <input
-            id="email"
-            type="email"
-            placeholder="Email"
-            className={`${classes.form__input} ${
-              emailHasError && classes.form__invalid
-            } `}
-            value={enteredEmail}
-            onBlur={emailBlurHandler}
-            onChange={emailChangeHandler}
-          />
-          <label htmlFor="email" className={classes.form__label}>
-            <FontAwesomeIcon
-              icon={["fas", "envelope"]}
-              className={classes.contactIcon}
-            />
-          </label>
-        </div>
-        <div className={classes.form__input_container}>
-          <textarea
-            id="message"
-            placeholder="Your Message"
-            className={`${classes.form__textarea} ${
-              messageHasError && classes.form__invalid
-            } `}
-            value={enteredMessage}
-            onBlur={messageBlurHandler}
-            onChange={messageChangeHandler}
-          ></textarea>
-          <label htmlFor="message" className={classes.form__label}>
-            <FontAwesomeIcon
-              icon={["fas", "comment"]}
-              className={classes.contactIcon}
-            />
-          </label>
-        </div>
+        <Input
+          id="name"
+          placeholder="Your Name"
+          inputHasError={nameHasError}
+          enteredValue={enteredName}
+          blurHandler={nameBlurHandler}
+          changeHandler={nameChangeHandler}
+        />
+        <Input
+          id="phone"
+          placeholder="Phone Number"
+          inputHasError={phoneHasError}
+          enteredValue={enteredPhone}
+          blurHandler={phoneBlurHandler}
+          changeHandler={phoneChangeHandler}
+        />
+        <Input
+          id="email"
+          placeholder="Email"
+          inputHasError={emailHasError}
+          enteredValue={enteredEmail}
+          blurHandler={emailBlurHandler}
+          changeHandler={emailChangeHandler}
+        />
+        <Textarea
+          id="message"
+          placeholder="Your Message"
+          inputHasError={messageHasError}
+          enteredValue={enteredMessage}
+          blurHandler={messageBlurHandler}
+          changeHandler={messageChangeHandler}
+        />
         <button disabled={!formIsValid} className={classes.form__button}>
           Send Message
         </button>

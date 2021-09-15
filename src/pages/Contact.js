@@ -2,7 +2,7 @@ import React from "react";
 import PageHeader from "../components/UI/PageHeader";
 import Form from "../components/contactForm/Form";
 import Map from "../components/map/Map";
-import OpeningHours from "../components/about/OpeningHours";
+/* import OpeningHours from "../components/about/OpeningHours"; */
 
 const Contact = () => {
   return (
