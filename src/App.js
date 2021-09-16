@@ -2,6 +2,7 @@ import { Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Membership from "./pages/Membership";
 import TheClub from "./pages/TheClub";
+import Gallery from "./pages/Gallery";
 import News from "./pages/News";
 import NewsHighlighted from "./pages/NewsHighlighted";
 import Contact from "./pages/Contact";
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/membership" exact>
             <Membership />
+          </Route>
+          <Route path="/gallery" exact>
+            <Gallery />
           </Route>
           <Route path="/the-club" exact>
             <TheClub />

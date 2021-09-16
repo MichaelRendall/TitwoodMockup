@@ -20,7 +20,7 @@ const Input = (props) => {
         className={`${classes.form__label} ${classes.isactive}`}
       >
         <FontAwesomeIcon
-          icon={["fas", "user"]}
+          icon={["fas", props.icon]}
           className={classes.contactIcon}
         />
       </label>

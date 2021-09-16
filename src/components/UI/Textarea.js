@@ -8,7 +8,7 @@ const Textarea = (props) => {
       <textarea
         id={props.id}
         placeholder={props.placeholder}
-        className={`${classes.form__input} ${
+        className={`${classes.form__textarea} ${
           props.inputHasError && classes.form__invalid
         } `}
         value={props.enteredValue}
@@ -20,7 +20,7 @@ const Textarea = (props) => {
         className={`${classes.form__label} ${classes.isactive}`}
       >
         <FontAwesomeIcon
-          icon={["fas", "user"]}
+          icon={["fas", props.icon]}
           className={classes.contactIcon}
         />
       </label>

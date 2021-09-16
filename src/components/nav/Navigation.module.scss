@@ -14,8 +14,9 @@
 }
 
 .navItems li {
-  margin: 0.5rem 1.25rem;
+  padding: 0.5rem 1.25rem;
   font-size: 1.1rem;
+  width: 100%;
 }
 
 .navItems a {
@@ -31,4 +32,24 @@
 
 .navItems a.active {
   color: $tan;
+}
+
+.button {
+  @extend .button-generic;
+  font-size: 1.1rem;
+  width: 100%;
+  display: block;
+  color: $off-white;
+  background-color: $main-green;
+  border: 1px solid $off-white;
+
+  &:hover,
+  &:active {
+    background: darken($main-green, 3%);
+    border: 1px solid $tan;
+    color: $tan;
+  }
+  @media (min-width: 30rem) {
+    display: none;
+  }
 }

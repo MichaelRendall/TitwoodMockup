@@ -76,6 +76,7 @@ const Form = (props) => {
           enteredValue={enteredName}
           blurHandler={nameBlurHandler}
           changeHandler={nameChangeHandler}
+          icon="user"
         />
         <Input
           id="phone"
@@ -84,6 +85,7 @@ const Form = (props) => {
           enteredValue={enteredPhone}
           blurHandler={phoneBlurHandler}
           changeHandler={phoneChangeHandler}
+          icon="mobile-alt"
         />
         <Input
           id="email"
@@ -92,6 +94,7 @@ const Form = (props) => {
           enteredValue={enteredEmail}
           blurHandler={emailBlurHandler}
           changeHandler={emailChangeHandler}
+          icon="envelope"
         />
         <Textarea
           id="message"
@@ -100,6 +103,7 @@ const Form = (props) => {
           enteredValue={enteredMessage}
           blurHandler={messageBlurHandler}
           changeHandler={messageChangeHandler}
+          icon="comment"
         />
         <button disabled={!formIsValid} className={classes.form__button}>
           Send Message

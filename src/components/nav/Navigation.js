@@ -10,7 +10,7 @@ const Navigation = (props) => {
             to="/"
             activeClassName={classes.active}
             onClick={props.clicked}
-			exact
+            exact
           >
             Home
           </NavLink>
@@ -35,6 +35,15 @@ const Navigation = (props) => {
         </li>
         <li>
           <NavLink
+            to="/gallery"
+            activeClassName={classes.active}
+            onClick={props.clicked}
+          >
+            Gallery
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/news"
             activeClassName={classes.active}
             onClick={props.clicked}
@@ -50,6 +59,9 @@ const Navigation = (props) => {
           >
             Get in Touch
           </NavLink>
+        </li>
+        <li>
+          <button className={classes.button}>Book a Court</button>
         </li>
       </ul>
     </nav>

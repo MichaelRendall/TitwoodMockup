@@ -1,18 +1,18 @@
-import classes from "./PricesTable.module.scss";
+import classes from "../../styles/Tables.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 const PricesTable = (props) => {
   return (
     <React.Fragment>
-      <table className={classes.Prices__table}>
+      <table className={classes.table}>
         <thead>
-          <tr className={classes.Prices__table_row}>
+          <tr className={classes.table_row}>
             <th colSpan="2">Annual Fees</th>
           </tr>
         </thead>
         <tbody>
-          <tr className={classes.Prices__table_row}>
+          <tr className={classes.table_row}>
             <td>
               Senior
               <br />
@@ -20,7 +20,7 @@ const PricesTable = (props) => {
             </td>
             <td>&pound;240</td>
           </tr>
-          <tr className={classes.Prices__table_row}>
+          <tr className={classes.table_row}>
             <td>
               Country
               <br />
@@ -28,7 +28,7 @@ const PricesTable = (props) => {
             </td>
             <td>&pound;125</td>
           </tr>
-          <tr className={classes.Prices__table_row}>
+          <tr className={classes.table_row}>
             <td>
               Mini
               <br />
@@ -36,7 +36,7 @@ const PricesTable = (props) => {
             </td>
             <td>&pound;47</td>
           </tr>
-          <tr className={classes.Prices__table_row}>
+          <tr className={classes.table_row}>
             <td>
               Junior
               <br />
@@ -44,7 +44,7 @@ const PricesTable = (props) => {
             </td>
             <td>&pound;120</td>
           </tr>
-          <tr className={classes.Prices__table_row}>
+          <tr className={classes.table_row}>
             <td>
               Intermediate
               <br />
@@ -52,7 +52,7 @@ const PricesTable = (props) => {
             </td>
             <td>&pound;130</td>
           </tr>
-          <tr className={classes.Prices__table_row}>
+          <tr className={classes.table_row}>
             <td>
               Non-Playing
               <br />
@@ -60,7 +60,7 @@ const PricesTable = (props) => {
             </td>
             <td>&pound;20</td>
           </tr>
-          <tr className={classes.Prices__table_row}>
+          <tr className={classes.table_row}>
             <td>
               Family
               <FontAwesomeIcon
@@ -73,7 +73,7 @@ const PricesTable = (props) => {
             </td>
             <td>&pound;480</td>
           </tr>
-          <tr className={classes.Prices__table_row}>
+          <tr className={classes.table_row}>
             <td>
               Day
               <FontAwesomeIcon
@@ -86,7 +86,7 @@ const PricesTable = (props) => {
             </td>
             <td>&pound;125</td>
           </tr>
-          <tr className={classes.Prices__table_row}>
+          <tr className={classes.table_row}>
             <td>
               Parent and Child{" "}
               <FontAwesomeIcon

@@ -1,0 +1,15 @@
+@import "../../styles/_variables.scss";
+
+.committee {
+  @extend .section-container;
+}
+
+.committee__section {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 1rem;
+  @media (min-width: 40rem) {
+    grid-template-columns: auto auto auto;
+  }
+}

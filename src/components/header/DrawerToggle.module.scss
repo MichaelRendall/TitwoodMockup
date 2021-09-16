@@ -14,5 +14,11 @@
     width: 100%;
     height: 4px;
     background-color: $off-white;
+	transition: all 0.3s ease;
+  }
+
+  &:hover div,
+  &:active div {
+    background: $tan;
   }
 }

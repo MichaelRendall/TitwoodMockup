@@ -1,6 +1,6 @@
-@import "../../styles/_variables.scss";
+@import "_variables.scss";
 
-.Prices__table {
+.table {
   width: 100%;
   border: 1px solid $light-grey;
   margin: 2rem auto;
@@ -8,7 +8,7 @@
   border-collapse: collapse;
 }
 
-.Prices__table_row {
+.table_row {
   background: $off-white;
 
   td,
@@ -17,14 +17,11 @@
   }
 }
 
-.Prices__table_row:nth-of-type(even) {
+.table_row:nth-of-type(even) {
   background: darken($off-white, 3%);
 }
 
 .info_icon {
   margin-left: 0.5rem;
   cursor: pointer;
-  /* &:hover {
-    color: $tan;
-  } */
 }
