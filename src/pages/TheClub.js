@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import PageHeader from "../components/UI/PageHeader";
 import Facilities from "../components/about/Facilities";
 import SocialTennis from "../components/about/SocialTennis";
@@ -5,6 +6,9 @@ import React from "react";
 import Committee from "../components/about/Committee";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About | Titwood Tennis";
+  });
   return (
     <React.Fragment>
       <div className="padding">

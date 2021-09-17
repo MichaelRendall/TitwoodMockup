@@ -50,7 +50,7 @@
 
   li {
     display: inline-block;
-    margin: 0 5px;
+    margin: 0 0.3rem;
   }
 }
 
@@ -60,4 +60,13 @@
 
 .mediaIcon {
   font-size: 1.75rem;
+}
+
+.socialMedia {
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:active {
+    color: $tan;
+  }
 }

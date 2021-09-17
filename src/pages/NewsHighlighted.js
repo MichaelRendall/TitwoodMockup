@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import NewsItemsHighlighted from "../components/news/NewsItemHighlighted";
 import PageHeader from "../components/UI/PageHeader";
@@ -11,6 +11,10 @@ const NewsHighlighted = () => {
   const highlightedNews = DUMMY_NEWS.find(
     (news) => news.id === parseInt(newsId)
   );
+
+  useEffect(() => {
+    document.title = `${highlightedNews.title} | Titwood Tennis`;
+  });
 
   return (
     <div className="padding">

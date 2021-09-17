@@ -35,7 +35,9 @@ const Header = () => {
         </div>
 
         <div className={`${classes.bookBtn} ${classes.headerSection}`}>
-          <button className={classes.button}>Book a Court</button>
+          <a href="https://clubspark.lta.org.uk/TitwoodLTC/" target="new">
+            <button className={classes.button}>Book a Court</button>
+          </a>
         </div>
       </div>
     </header>

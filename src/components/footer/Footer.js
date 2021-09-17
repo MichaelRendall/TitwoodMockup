@@ -25,22 +25,40 @@ const Footer = () => {
         <div>
           <ul className={classes.ul}>
             <li>
-              <FontAwesomeIcon
-                icon={["fab", "facebook-f"]}
-                className={classes.mediaIcon}
-              />
+              <a
+                className={classes.socialMedia}
+                href="https://www.facebook.com/TitwoodLTC/"
+                target="new"
+              >
+                <FontAwesomeIcon
+                  icon={["fab", "facebook-f"]}
+                  className={classes.mediaIcon}
+                />
+              </a>
             </li>
             <li>
-              <FontAwesomeIcon
-                icon={["fab", "twitter"]}
-                className={classes.mediaIcon}
-              />
+              <a
+                className={classes.socialMedia}
+                href="https://twitter.com/titwoodtennis"
+                target="new"
+              >
+                <FontAwesomeIcon
+                  icon={["fab", "twitter"]}
+                  className={classes.mediaIcon}
+                />
+              </a>
             </li>
             <li>
-              <FontAwesomeIcon
-                icon={["fab", "instagram"]}
-                className={classes.mediaIcon}
-              />
+              <a
+                className={classes.socialMedia}
+                href="https://www.instagram.com/titwoodlawntennis/"
+                target="new"
+              >
+                <FontAwesomeIcon
+                  icon={["fab", "instagram"]}
+                  className={classes.mediaIcon}
+                />
+              </a>
             </li>
           </ul>
         </div>

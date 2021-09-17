@@ -1,6 +1,10 @@
+import { useEffect } from "react";
+
 const Gallery = () => {
-	return "images here";
-  };
-  
-  export default Gallery;
-  
+  useEffect(() => {
+    document.title = "Gallery | Titwood Tennis";
+  });
+  return "images here";
+};
+
+export default Gallery;

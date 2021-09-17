@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AdditionalInfo from "../components/membership/AdditionalInfo";
 import Prices from "../components/membership/Prices";
 import PageHeader from "../components/UI/PageHeader";
 import Form from "../components/contactForm/Form";
 
 const Membership = () => {
+  useEffect(() => {
+    document.title = "Membership | Titwood Tennis";
+  });
+
   return (
     <React.Fragment>
       <div className="padding">
