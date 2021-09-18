@@ -63,7 +63,7 @@
 }
 
 .socialMedia {
-  transition: all 0.3s ease;
+  transition: $transitiion;
 
   &:hover,
   &:active {

@@ -5,8 +5,9 @@ import DUMMY_NEWS from "../../lib/dummy-news";
 const NewsItems = () => {
   const newsList = DUMMY_NEWS.map((news) => {
     let body = news.body;
-    if (news.body.length > 200) {
-      body = `${news.body.substring(0, 200)}...`;
+    body = body.replace("<br />", "");
+    if (body.length > 200) {
+      body = `${body.substring(0, 200)}...`;
     }
 
     return (

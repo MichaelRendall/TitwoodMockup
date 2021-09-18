@@ -20,3 +20,17 @@
 .image-gallery-icon:focus {
   outline: none;
 }
+
+@media (hover: hover) and (pointer: fine) {
+  .image-gallery-bullets .image-gallery-bullet.active:hover {
+    background: $tan;
+    border: 1px solid $tan;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .image-gallery-bullets .image-gallery-bullet:hover {
+    background: $tan;
+    border: 1px solid $tan;
+  }
+}

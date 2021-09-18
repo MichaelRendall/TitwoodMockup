@@ -22,17 +22,17 @@
 .navItems a {
   text-decoration: none;
   color: $off-white;
-}
+  transition: $transitiion;
 
-.navItems a:hover,
-.navItems a:active {
-  color: $off-white;
-  text-decoration: underline;
+  &:hover,
+  &:active {
+    color: $tan;
+  }
 }
 
 .navItems a.active {
-  color: $tan;
-}
+	color: $tan;
+  }
 
 .button {
   @extend .button-generic;

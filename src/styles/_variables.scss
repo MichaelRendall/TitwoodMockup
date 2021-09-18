@@ -8,6 +8,7 @@ $header-height-mobile: 5.2rem;
 $header-height-web: 6.2rem;
 $headerheight: 6.2rem;
 $max-width: 54rem;
+$transitiion: all 0.3s ease;
 
 .section-container {
   width: 100%;
@@ -19,5 +20,5 @@ $max-width: 54rem;
   padding: 1rem;
   cursor: pointer;
   border-radius: 4px;
-  transition: all 0.3s ease;
+  transition: $transitiion;
 }

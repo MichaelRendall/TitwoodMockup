@@ -48,7 +48,7 @@
 
 .form__invalid {
   border: 2px solid $red;
-  transition: all 0.3s ease;
+  transition: $transitiion;
 }
 
 .form__invalid + .form__label {

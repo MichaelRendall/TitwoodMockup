@@ -10,7 +10,7 @@ const DUMMY_NEWS = [
     id: 2,
     title: "Coaching and other Sessions",
     date: "17 August 2021",
-    body: "The Ladies’ Tuesday morning coaching sessions start on 17th August – two hours with the Coach, with coffee and match play – fee £5. On Thursday evenings, there will be two hours for all seniors with the Coach, starting at 7 pm. On Saturday afternoons, social tennis will run from 2- 4 pm and is open to all seniors. Junior coaching starts back Saturday, 28th August.",
+    body: "The Ladies’ Tuesday morning coaching sessions start on 17th August – two hours with the Coach, with coffee and match play – fee £5. <br /> On Thursday evenings, there will be two hours for all seniors with the Coach, starting at 7 pm. <br /> On Saturday afternoons, social tennis will run from 2- 4 pm and is open to all seniors. Junior coaching starts back Saturday, 28th August.",
     image: "",
   },
   {
@@ -24,7 +24,7 @@ const DUMMY_NEWS = [
     id: 4,
     title: "Reach for the top!",
     date: "10 August 2021",
-    body: "For those who like to dress to impress or just show their affinity to TLTC, our chic tops are now on sale. They’re grey, come in ladies’ and gents’ sizes Small to X-Large, and cost £32.  Reach for the top on Thursday evenings at the clubhouse – ask for Carole Hannah – or email info@titwoodlawntennisclub.co.uk with the number and size(s) you’d like.  Please note we currently hold only a limited stock but more can be ordered if there’s enough demand.",
+    body: "For those who like to dress to impress or just show their affinity to TLTC, our chic tops are now on sale. They’re grey, come in ladies’ and gents’ sizes Small to X-Large, and cost £32. <br /> Reach for the top on Thursday evenings at the clubhouse – ask for Carole Hannah – or email info@titwoodlawntennisclub.co.uk with the number and size(s) you’d like. <br /> Please note we currently hold only a limited stock but more can be ordered if there’s enough demand.",
     image: "",
   },
   {
@@ -45,7 +45,7 @@ const DUMMY_NEWS = [
     id: 7,
     title: "Thanks to Titwood Teams",
     date: "05 August 2021",
-    body: "We would like to thank all members who played for Titwood in the various West of Scotland Summer Leagues – and the team captains for all the hard work put in to organise matches, including player selection. In all, we had fourteen teams in the various Open and Over 60s’ leagues. The final placings of all our teams can be seen here.",
+    body: "We would like to thank all members who played for Titwood in the various West of Scotland Summer Leagues – and the team captains for all the hard work put in to organise matches, including player selection. In all, we had fourteen teams in the various Open and Over 60s’ leagues. <br /> The final placings of all our teams can be seen here.",
     image: "",
   },
 ];

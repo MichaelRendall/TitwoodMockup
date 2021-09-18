@@ -55,7 +55,9 @@ const ImgGallery = () => {
       <ImageGallery
         items={images}
         thumbnailPosition="top"
+        showThumbnails={false}
         showPlayButton={false}
+        showBullets={true}
       />
     </div>
   );
